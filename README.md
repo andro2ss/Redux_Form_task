@@ -36,4 +36,5 @@ Next in terminal start npm:
 $ npm start
 ```
 
-## [Live preview](https://pages.github.com/)
+## Live preview
+### [Redux Form Task](https://redux-form-ab.web.app/)
