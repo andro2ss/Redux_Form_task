@@ -7,9 +7,8 @@ import renderRadioButtonsGroup from "../common/Form/radioButtonsGroup/renderRadi
 import { connect } from "react-redux";
 import renderSliderValues from "../common/Form/slider/renderSliderValues";
 import { Button } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 let AddDishForm = (props) => {
   const { handleSubmit, pristine, reset, submitting, dishType } = props;
 
@@ -78,7 +77,7 @@ let AddDishForm = (props) => {
           disabled={submitting}
           className="form__button"
         >
-          Add <SendIcon className="form__item" />
+          Add <AddCircleOutlineIcon className="form__item" />
         </Button>
         <Button
           type="button"
@@ -87,7 +86,7 @@ let AddDishForm = (props) => {
           onClick={reset}
           className="form__button"
         >
-          Reset <DeleteOutlineIcon className="form__item" />
+          Reset <RemoveCircleOutlineIcon className="form__item" />
         </Button>
       </div>
     </form>
