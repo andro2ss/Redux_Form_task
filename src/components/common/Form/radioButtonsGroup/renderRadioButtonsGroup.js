@@ -6,7 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import "./RadioButtonsGroup.scss";
 
-export default function renderRadioButtonsGroup({ input, ...rest }) {
+export default function renderRadioButtonsGroup({ input, types, ...rest }) {
   return (
     <FormControl className="radio__container">
       <FormLabel>{rest.label}</FormLabel>
@@ -16,14 +16,14 @@ export default function renderRadioButtonsGroup({ input, ...rest }) {
         aria-labelledby="radio-buttons-group-label"
       >
         <div className="radio__box">
-          {rest.types.map((type) => {
+          {types.map((type) => {
             return (
               <FormControlLabel
                 className="box__item"
                 key={type}
                 value={type}
                 control={<Radio />}
-                label={type}
+                label={type.toUpperCase()}
               />
             );
           })}
