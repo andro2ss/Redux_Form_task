@@ -1,0 +1,14 @@
+.radio{
+ &__container{
+   margin: 10px 0 !important;
+ }
+
+  &__box{
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+      margin-left: 20px;
+    }
+  }
+}
