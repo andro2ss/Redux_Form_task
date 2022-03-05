@@ -12,6 +12,7 @@ import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { intGreaterZeroNormalize } from "../../functions/intGreaterZeroNormalize";
 import { greaterZeroNormalize } from "../../functions/greaterZeroNormalize";
 import "./AddDishForm.scss";
+import WifiSpinner from "../common/spinner/WifiSpinner";
 
 let AddDishForm = (props) => {
   const { handleSubmit, pristine, reset, submitting, dishType, spiciness } =
@@ -125,6 +126,9 @@ let AddDishForm = (props) => {
         >
           Reset <RemoveCircleOutlineIcon className="form__item" />
         </Button>
+      </div>
+      <div id="curtain">
+        <WifiSpinner loadingText="adding" />
       </div>
     </form>
   );
