@@ -49,10 +49,10 @@ export default function renderSliderValues({ input, label, ...rest }) {
     return `${value}`;
   }
   return (
-    <div>
+    <div className="slider__container">
       <label>{label}:</label>
       <Slider
-        className="slider__container"
+        className="slider__item"
         aria-label={label}
         getAriaValueText={valuetext}
         step={1}
