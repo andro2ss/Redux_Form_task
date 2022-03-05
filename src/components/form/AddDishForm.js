@@ -11,6 +11,7 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { intGreaterZeroNormalize } from "../../functions/intGreaterZeroNormalize";
 import { greaterZeroNormalize } from "../../functions/greaterZeroNormalize";
+import "./AddDishForm.scss";
 
 let AddDishForm = (props) => {
   const { handleSubmit, pristine, reset, submitting, dishType, spiciness } =

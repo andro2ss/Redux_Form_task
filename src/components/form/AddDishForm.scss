@@ -1,0 +1,38 @@
+.form {
+  &__container {
+    margin-top: 50px;
+    background: rgba(245, 245, 245, 0.90);
+    padding: 16px 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .error {
+      color: red;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    width: 40%;
+    @media only screen and (max-width: 400px) {
+      width: 80%
+    }
+  }
+
+  &__item {
+    margin-left: 8px;
+  }
+}

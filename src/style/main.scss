@@ -10,35 +10,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
-  .form {
-    &__container {
-      margin-top: 50px;
-      background: rgba(245, 245, 245, 0.90);
-      padding: 16px 10%;
-      display: flex;
-      flex-direction: column;
-    }
 
-    &__buttons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      row-gap: 16px;
-      @media only screen and (max-width: 400px) {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
 
-    &__button {
-      width: 40%;
-      @media only screen and (max-width: 400px) {
-        width: 80%
-      }
-    }
+  .hidden {
+    display: none;
+  }
 
-    &__item {
-      margin-left: 8px;
+  .alert {
+    display: none;
+
+    &--show {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
