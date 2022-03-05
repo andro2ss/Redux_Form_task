@@ -9,6 +9,8 @@ import renderSliderValues from "../common/Form/slider/renderSliderValues";
 import { Button } from "@mui/material";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+import { intGreaterZeroNormalize } from "../../functions/intGreaterZeroNormalize";
+import { greaterZeroNormalize } from "../../functions/greaterZeroNormalize";
 let AddDishForm = (props) => {
   const { handleSubmit, pristine, reset, submitting, dishType } = props;
 
@@ -40,12 +42,14 @@ let AddDishForm = (props) => {
             type="number"
             component={renderTextField}
             label="Number of slices"
+            normalize={intGreaterZeroNormalize}
           />
           <Field
             name="diameter"
             type="number"
             component={renderTextField}
             label="Diameter"
+            normalize={greaterZeroNormalize}
           />
         </>
       ) : (
@@ -66,6 +70,7 @@ let AddDishForm = (props) => {
           type="number"
           component={renderTextField}
           label="Number of slices of bread"
+          normalize={intGreaterZeroNormalize}
         />
       ) : (
         ""
