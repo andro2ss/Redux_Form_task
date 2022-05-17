@@ -1,4 +1,12 @@
-# Redux Form
+# Redux Dish Form
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#Technologies)
+* [Setup](#Setup)
+* [App website](#App-website)
+
+## General info
 
 A simple form with field validation. 
 Sending POST request data in JSON format and 
@@ -18,12 +26,15 @@ handling returned validation errors.
    - For sandwich:
      - Number field: number of slices of bread
      
-## Used technology:
+## Technologies
 - React
-- Redux
-- Redux-Form
-- Scss
+- JavaScript
+- SCSS
+- React Redux
+- Redux Form
+- REST
 - MUI
+- Firebase
 
 ## Setup
 To run this project, clone repo and install it locally using npm:
@@ -36,5 +47,5 @@ Next in terminal start npm:
 $ npm start
 ```
 
-## Live preview
+## App website
 ### [Redux Form Task](https://redux-form-ab.web.app/)
